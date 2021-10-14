@@ -2,7 +2,7 @@ Feature: Automation Testing of Realestate website
 
   Background: signup
     Given admin is on the login page
-    When admin will enter the username "admin" and password "admin@123"
+    When admin will enter the username "amit92luthra" and password "admin@987654321"
     And admin will click on the sign in button
     Then will redirected to the dashboard
     Then click on Properties and click on Add New
@@ -17,18 +17,19 @@ Feature: Automation Testing of Realestate website
     Given admin is at Property fields
     When admin click on price filed and enter "<price>" in this step
     Then admin enter the Price per sq meter/sq ft "<Price per sq meter/sq ft>"
-    Then select the anyone of the offer type
-    Then select the anyone of the property type
+    Then select the anyone of the offer type "<offertype>"
+    Then select the anyone of the property type "<proptype>"
     And click on main details field and enter "<status>","<location>" and "<posession>"
     And click on location field and enter address "<address>",Google Maps Address "<Google Maps Address>"
     And admin click on Details field and enter storage room details here "<storage room>"
     Then admin click on video and enter video details here "<video>"
 
     Examples: 
-      | price | Price per sq meter/sq ft | status       | location  | posession  | address    | Google Maps Address | storage room | video |
-      |  1234 |                     1234 | 123jkhjdslha | y13t4ey45 | tyt456ujed | 123-23Ajkh | hyderabad           | storage_rm   | vid   |
+      | price  | Price per sq meter/sq ft | offertype | proptype   | status       | location  | posession  | address    | Google Maps Address | storage room | video |
+      |   1234 |                     1234 | For Rent  | Apartments | 123jkhjdslha | y13t4ey45 | tyt456ujed | 123-23Ajkh | hyderabad           | storage_rm   | vid   |
+      |        |                          | For Lease | Villas     |              |           |            |            |                     |              |       |
+      | $1,234 |                     1234 | For Lease | Villas     | 123jkhjdslha | y13t4ey45 | tyt456ujed | 123-23Ajkh | jhgslga             |              |       |
 
-  #| 1234.5|                     1234 |              |           |            |            |                     |              |       |
   @tag3
   Scenario Outline: Findeo Property Options
     Given admin is on the add new page and at Findeo Property Options

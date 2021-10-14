@@ -1,78 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="549.742023">
-<testcase classname="Automation Testing of Realestate website" name="Property Gallery field" time="65.352901">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="284.208488">
+<testcase classname="Automation Testing of Realestate website" name="Property fields" time="100.758059">
 <system-out><![CDATA[Given admin is on the login page............................................passed
-When admin will enter the username "admin" and password "admin@123".........passed
-And admin will click on the sign in button..................................passed
-Then will redirected to the dashboard.......................................passed
-Then click on Properties and click on Add New...............................passed
-Given admin is on the Add New page..........................................passed
-Then select any one of them from the drop down list.........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Automation Testing of Realestate website" name="Property fields" time="92.524412">
-<system-out><![CDATA[Given admin is on the login page............................................passed
-When admin will enter the username "admin" and password "admin@123".........passed
+When admin will enter the username "amit92luthra" and password "admin@987654321".passed
 And admin will click on the sign in button..................................passed
 Then will redirected to the dashboard.......................................passed
 Then click on Properties and click on Add New...............................passed
 Given admin is at Property fields...........................................passed
 When admin click on price filed and enter "1234" in this step...............passed
 Then admin enter the Price per sq meter/sq ft "1234"........................passed
-Then select the anyone of the offer type....................................passed
-Then select the anyone of the property type.................................passed
+Then select the anyone of the offer type "For Rent".........................passed
+Then select the anyone of the property type "Apartments"....................passed
 And click on main details field and enter "123jkhjdslha","y13t4ey45" and "tyt456ujed".passed
 And click on location field and enter address "123-23Ajkh",Google Maps Address "hyderabad".passed
 And admin click on Details field and enter storage room details here "storage_rm".passed
 Then admin click on video and enter video details here "vid"................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Automation Testing of Realestate website" name="Findeo Property Options" time="177.031664">
+<testcase classname="Automation Testing of Realestate website" name="Property fields 2" time="87.721284">
 <system-out><![CDATA[Given admin is on the login page............................................passed
-When admin will enter the username "admin" and password "admin@123".........passed
+When admin will enter the username "amit92luthra" and password "admin@987654321".passed
 And admin will click on the sign in button..................................passed
 Then will redirected to the dashboard.......................................passed
 Then click on Properties and click on Add New...............................passed
-Given admin is on the add new page and at Findeo Property Options...........passed
-When click on the drop down list and select from the drop down list "Header".passed
+Given admin is at Property fields...........................................passed
+When admin click on price filed and enter "" in this step...................passed
+Then admin enter the Price per sq meter/sq ft ""............................passed
+Then select the anyone of the offer type "For Lease"........................passed
+Then select the anyone of the property type "Villas"........................passed
+And click on main details field and enter "","" and ""......................passed
+And click on location field and enter address "",Google Maps Address "".....passed
+And admin click on Details field and enter storage room details here "".....passed
+Then admin click on video and enter video details here ""...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Automation Testing of Realestate website" name="Discussion field and Revolution slider Options field" time="55.983293">
+<testcase classname="Automation Testing of Realestate website" name="Property fields 3" time="95.729145">
 <system-out><![CDATA[Given admin is on the login page............................................passed
-When admin will enter the username "admin" and password "admin@123".........passed
+When admin will enter the username "amit92luthra" and password "admin@987654321".passed
 And admin will click on the sign in button..................................passed
 Then will redirected to the dashboard.......................................passed
 Then click on Properties and click on Add New...............................passed
-Given admin is on the Discussion field......................................passed
-When admin click on multiple check boxes....................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Automation Testing of Realestate website" name="Regions field" time="78.316945">
-<system-out><![CDATA[Given admin is on the login page............................................passed
-When admin will enter the username "admin" and password "admin@123".........passed
-And admin will click on the sign in button..................................passed
-Then will redirected to the dashboard.......................................passed
-Then click on Properties and click on Add New...............................passed
-Given admin is on the Regions field.........................................passed
-When admin click all regions field and select multiple check boxes..........passed
-Then admin click on the most used field of regions and select multiple check boxex.passed
-And click on add new region.................................................passed
-Then enter the field of regions "abc" and select "Test1" from drop down.....passed
-Then click on Add new region button.........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Automation Testing of Realestate website" name="Features field" time="80.532808">
-<system-out><![CDATA[Given admin is on the login page............................................passed
-When admin will enter the username "admin" and password "admin@123".........passed
-And admin will click on the sign in button..................................passed
-Then will redirected to the dashboard.......................................passed
-Then click on Properties and click on Add New...............................passed
-Given admin is on the Features field........................................passed
-When admin click all Features field and select multiple check boxes.........passed
-Then admin click on the most used field of features and select multiple check boxex.passed
-And click on add new features...............................................passed
-Then enter the field of features "abc" and select "feat" from drop down.....passed
-Then click on Add new features button.......................................passed
+Given admin is at Property fields...........................................passed
+When admin click on price filed and enter "$1,234" in this step.............passed
+Then admin enter the Price per sq meter/sq ft "1234"........................passed
+Then select the anyone of the offer type "For Lease"........................passed
+Then select the anyone of the property type "Villas"........................passed
+And click on main details field and enter "123jkhjdslha","y13t4ey45" and "tyt456ujed".passed
+And click on location field and enter address "123-23Ajkh",Google Maps Address "jhgslga".passed
+And admin click on Details field and enter storage room details here "".....passed
+Then admin click on video and enter video details here ""...................passed
 ]]></system-out>
 </testcase>
 </testsuite>

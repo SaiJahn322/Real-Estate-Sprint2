@@ -145,12 +145,14 @@ public class Addnewdefinition {
 	}
 
 
-	@Then("^select the anyone of the offer type$")
-	public void select_the_anyone_of_the_offer_type(){
+	@Then("^select the anyone of the offer type \"([^\"]*)\"$")
+	public void select_the_anyone_of_the_offer_type(String arg1){
 		try{
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//select[@name='_offer_type']")).click();
-			driver.findElement(By.xpath("//option[contains(text(),'For Rent')]")).click();
+			//driver.findElement(By.xpath("//option[contains(text(),'For Rent')]")).click();
+			Select dropdown = new Select(driver.findElement(By.id("_offer_type")));
+			dropdown.selectByVisibleText(arg1);
 		}
 		catch(Exception e){
 			System.out.println(e);
@@ -158,12 +160,14 @@ public class Addnewdefinition {
 		}
 	}
 
-	@Then("^select the anyone of the property type$")
-	public void select_the_anyone_of_the_property_type() {
+	@Then("^select the anyone of the property type \"([^\"]*)\"$")
+	public void select_the_anyone_of_the_property_type(String arg1) {
 		try{
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//select[@name='_property_type']")).click();
-			driver.findElement(By.xpath("//option[contains(text(),'Villas')]")).click();
+			//driver.findElement(By.xpath("//option[contains(text(),'Villas')]")).click();
+			Select dropdown = new Select(driver.findElement(By.id("_property_type")));
+			dropdown.selectByVisibleText(arg1);
 		}
 		catch(Exception e){
 			System.out.println(e);
