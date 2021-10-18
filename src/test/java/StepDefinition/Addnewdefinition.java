@@ -83,7 +83,7 @@ public class Addnewdefinition {
 		}
 		catch(Exception e){
 			System.out.println(e);
-			//Assert.fail();
+			Assert.fail();
 		}
 	}
 
@@ -338,6 +338,8 @@ public class Addnewdefinition {
    public void admin_is_on_the_Regions_field() {
 	   try{
 		   Thread.sleep(3000);
+		   driver.findElement(By.xpath("//div[@id='screen-options-link-wrap']/button")).click();
+		   driver.findElement(By.xpath("//input[@value='regiondiv']")).click();
 			String Text=driver.findElement(By.xpath("//div[@id='regiondiv']/h2/span")).getText();
 			System.out.println(Text);
 	   }
@@ -352,10 +354,10 @@ public class Addnewdefinition {
    public void admin_click_all_regions_field_and_select_multiple_check_boxes() {
 	   try{
 		   Thread.sleep(1000);
-		   driver.findElement(By.xpath("//div[@id='taxonomy-region']/ul/li[1]/a")).click();
-		   driver.findElement(By.xpath("//input[@id='in-region-1890']")).click();
-		   driver.findElement(By.xpath("//input[@id='in-region-1897']")).click();
-		   driver.findElement(By.xpath("//input[@id='in-region-1432']")).click();
+		   //driver.findElement(By.xpath("//div[@id='taxonomy-region']/ul/li[1]/a")).click();
+		   driver.findElement(By.xpath("//input[@id='in-region-1979']")).click();
+		   //driver.findElement(By.xpath("//input[@id='in-region-1966']")).click();
+		   //driver.findElement(By.xpath("//input[@id='in-region-1968']")).click();
 	   }
 	   catch(Exception e){
            System.out.println(e);
@@ -368,8 +370,8 @@ public class Addnewdefinition {
 	   try{
 		   Thread.sleep(5000);
 		   driver.findElement(By.xpath("//div[@id='taxonomy-region']/ul/li[2]/a")).click();
-		   driver.findElement(By.xpath("//input[@value='1432']/..")).click();
-		   driver.findElement(By.xpath("//input[@id='in-popular-region-1438']/..")).click();
+		   //driver.findElement(By.xpath("//input[@value='1432']/..")).click();
+		   //driver.findElement(By.xpath("//input[@id='in-popular-region-1438']/..")).click();
 		   //driver.findElement(By.xpath("//input[@id='in-popular-region-1438']")).click();
 
 	   }
@@ -412,7 +414,7 @@ public class Addnewdefinition {
 	   try{
 		   Thread.sleep(3000);
 		   driver.findElement(By.xpath("//input[@id='region-add-submit']")).click();
-
+		   Assert.fail();
 	   }
 	   catch(Exception e){
 		   System.out.println(e);
@@ -455,8 +457,8 @@ public class Addnewdefinition {
 	   try{
 		   Thread.sleep(5000);
 		   driver.findElement(By.xpath("//div[@id='taxonomy-property_feature']/ul/li[2]/a")).click();
-		   driver.findElement(By.xpath("//input[@value='1618']/..")).click();
-		   driver.findElement(By.xpath("//input[@value='1746']/..")).click();
+		   driver.findElement(By.xpath("//li[@id='popular-property_feature-1618']")).click();
+		   driver.findElement(By.xpath("//li[@id='popular-property_feature-1746']")).click();
 
 	   }
 	   catch(Exception e){
@@ -496,6 +498,7 @@ public class Addnewdefinition {
 	   try{
 		   Thread.sleep(5000);
 		   driver.findElement(By.xpath("//input[@id='property_feature-add-submit']")).click();
+		   Assert.fail();
     	  }
 	   catch(Exception e){
 		   System.out.println(e);

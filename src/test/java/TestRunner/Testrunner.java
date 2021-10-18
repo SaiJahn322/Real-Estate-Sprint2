@@ -11,8 +11,8 @@ import cucumber.api.junit.Cucumber;
 		,glue={"StepDefinition","hooks"},
 		dryRun=false,
 		monochrome=true,
-		tags={"@tag2"},
-		//tags={"@tag1,@tag2,@tag3,@tag4,@tag5,@tag6"},
+		//tags={"@tag6"},
+		tags={"@tag1,@tag2,@tag3,@tag4,@tag5,@tag6"},
 		//tags={"@tag5,@tag6"}
 		plugin={"pretty","junit:target/report.xml","html:target/cucumber-pretty","json:target/jasonreport.json"}
 		)

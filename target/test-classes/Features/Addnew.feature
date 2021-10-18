@@ -2,7 +2,7 @@ Feature: Automation Testing of Realestate website
 
   Background: signup
     Given admin is on the login page
-    When admin will enter the username "amit92luthra" and password "admin@987654321"
+    When admin will enter the username "mohankrishna176@gmail.com" and password "Secret@123&&"
     And admin will click on the sign in button
     Then will redirected to the dashboard
     Then click on Properties and click on Add New
@@ -55,7 +55,7 @@ Feature: Automation Testing of Realestate website
 
     Examples: 
       | region | mstused |
-      | abc    | Test1   |
+      | abc    | Pune    |
 
   @tag6
   Scenario Outline: Features field
@@ -68,4 +68,4 @@ Feature: Automation Testing of Realestate website
 
     Examples: 
       | feature | mstused |
-      | abc     | feat    |
+      | abc     | ,knh/l  |
